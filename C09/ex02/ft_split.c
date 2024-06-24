@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ochouati <ochouati@student.42.fr>          +#+  +:+       +#+        */
+/*   By: amejdoub <amejdoub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/06 16:51:43 by ochouati          #+#    #+#             */
-/*   Updated: 2023/09/06 22:30:50 by ochouati         ###   ########.fr       */
+/*   Created: 2023/09/03 16:51:43 by amejdoub          #+#    #+#             */
+/*   Updated: 2023/09/05 22:30:50 by amejdoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
@@ -104,35 +103,3 @@ char	**ft_split(char *str, char *charset)
 	}
 	return (strs);
 }
-
-/* -------- */
-/*
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void	handler(char **str)
-{
-	int	i;
-	int	j;
-
-	i = 0;
-	while (str[i])
-	{
-		j = 0;
-		while (str[i][j])
-			ft_putchar(str[i][j++]);
-		ft_putchar('\n');
-		i++;
-	}
-}
-
-
-int main(void)
-{
-	char **st = ft_split("Hello*is@@@@@World.my.guy@", "@*.");
-	handler(st);
-
-}
-*/
